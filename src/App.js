@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { CssBaseline } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
 
-import { Navbar, Products, Cart, Checkout, Footer } from "./components";
+import { Navbar, Products, Cart, Checkout, Footer, Hero } from "./components";
 import { commerce } from "./lib/commerce";
 
 const App = () => {
@@ -76,7 +77,8 @@ const App = () => {
 
   return (
     <Router>
-      <div style={{ display: "flex" }}>
+      <Hero />
+      <div style={{ display: "flex", flexDirection: "row" }}>
         <CssBaseline />
         <Navbar
           totalItems={cart.total_items}
