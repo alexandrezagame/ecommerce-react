@@ -77,8 +77,7 @@ const App = () => {
 
   return (
     <Router>
-      <Hero />
-      <div style={{ display: "flex", flexDirection: "row" }}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <CssBaseline />
         <Navbar
           totalItems={cart.total_items}
@@ -87,6 +86,7 @@ const App = () => {
 
         <Switch>
           <Route exact path="/">
+            <Hero />
             <Products
               products={products}
               onAddToCart={handleAddToCart}

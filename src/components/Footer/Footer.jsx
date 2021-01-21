@@ -1,6 +1,5 @@
 import React from "react";
 import useStyles from "./styles";
-import { Toolbar, Typography, Container, AppBar } from "@material-ui/core";
 
 const Footer = () => {
   const classes = useStyles();

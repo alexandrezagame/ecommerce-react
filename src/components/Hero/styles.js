@@ -6,24 +6,27 @@ export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
 
   zoneone: {
-    height: "50vh",
-    display: "flex",
+    // height: "50vh",
     minWidth: "100vw",
-    flexDirection: "column",
     backgroundColor: "#FEBC00",
-    alignItems: "center",
+
     // marginTop: "5rem",
     // marginBottom: "1rem",
   },
   title: {
     // display: "flex",
+    margin: "0 auto",
+    // justifyContent: "center",
     fontFamily: font,
+    fontSize: "2rem",
+    // alignContent: "center",
+    // alignItems: "center",
     width: "50vw",
     textAlign: "center",
     color: "white",
     marginTop: "5%",
     marginBottom: "5%",
-    overflow: "auto",
+    // overflow: "auto",
   },
   emptyButton: {
     minWidth: "150px",
