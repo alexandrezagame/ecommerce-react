@@ -50,8 +50,10 @@ const AddressForm = ({ checkoutToken, next }) => {
       { country, region: stateProvince }
     );
 
+    console.log(options);
+
     setShippingOptions(options);
-    setShippingOption(options[0]?.id);
+    setShippingOption(options[0]);
   };
 
   useEffect(() => {
@@ -111,7 +113,7 @@ const AddressForm = ({ checkoutToken, next }) => {
               </Select>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <InputLabel>Shipping Subdivision</InputLabel>
+              <InputLabel>Shipping State</InputLabel>
               <Select
                 value={shippingSubdivision}
                 fullWidth
@@ -126,7 +128,7 @@ const AddressForm = ({ checkoutToken, next }) => {
                   ))}
               </Select>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            {/* <Grid item xs={12} sm={6}>
               <InputLabel>Shipping Options</InputLabel>
               <Select
                 value={shippingOption}
@@ -144,7 +146,7 @@ const AddressForm = ({ checkoutToken, next }) => {
                     </MenuItem>
                   ))}
               </Select>
-            </Grid>
+            </Grid> */}
           </Grid>
           <br />
           <div style={{ display: "flex", justifyContent: "space-between" }}>

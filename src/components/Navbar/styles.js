@@ -10,15 +10,24 @@ export default makeStyles((theme) => ({
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
     },
+    backgroundColor: "#FEBC00",
+    alignItems: "center",
   },
   title: {
     flexGrow: 1,
     alignItems: "center",
     display: "flex",
+    justifyContent: "center",
     textDecoration: "none",
   },
   image: {
-    marginRight: "10px",
+    height: "70px",
+    width: "auto",
+  },
+  button: {
+    position: "fixed",
+    right: "0",
+    marginRight: "20px",
   },
   menuButton: {
     marginRight: theme.spacing(2),
