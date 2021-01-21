@@ -37,6 +37,7 @@ const Product = ({ product, onAddToCart }) => {
           variant="body2"
           color="textSecondary"
           component="p"
+          className={classes.cardDescription}
         />
       </CardContent>
       <CardActions disableSpacing className={classes.cardActions}>

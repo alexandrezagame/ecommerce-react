@@ -4,6 +4,7 @@ export default makeStyles(() => ({
   root: {
     // maxWidth: 345, original width style
     maxWidth: "100%",
+    minHeight: "450px",
   },
   media: {
     height: 0,
@@ -16,5 +17,9 @@ export default makeStyles(() => ({
   cardContent: {
     display: "flex",
     justifyContent: "space-between",
+  },
+  cardDescription: {
+    overflow: "auto",
+    height: "125px",
   },
 }));
