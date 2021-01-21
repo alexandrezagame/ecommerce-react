@@ -9,7 +9,6 @@ export default makeStyles((theme) => ({
     // marginTop: "5%",
     width: "auto",
     height: "100vh",
-    marginTop: "50rem",
     marginBottom: "5rem",
     marginLeft: theme.spacing(2),
     marginRight: theme.spacing(2),
